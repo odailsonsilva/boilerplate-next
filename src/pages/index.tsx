@@ -1,5 +1,5 @@
 export default function Home() {
-  return (
-   <h1>next</h1>
-  )
+  const vars = 'sad'
+
+  return <h1>next</h1>
 }
