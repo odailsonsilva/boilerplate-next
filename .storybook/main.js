@@ -5,5 +5,11 @@ module.exports = {
   ],
   "addons": [
     "@storybook/addon-essentials",
-  ]
+    '@storybook/addon-docs/preset'
+  ],
+  webpackFinal: (config) => {
+    config.resolve.modules.push(`${process.cwd()}/src`)
+    return config
+  },
+
 }
